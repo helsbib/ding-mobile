@@ -28,7 +28,7 @@ function ting_search_mobile_default_page_manager_handlers() {
           'name' => 'php',
           'settings' => array(
             'description' => '',
-            'php' => 'if (mobile_tools_is_mobile_site() == \'mobile\') {
+            'php' => 'if (mobile_tools_site_type() == \'mobile\') {
       return true;
     }
     return false;',
@@ -118,7 +118,7 @@ function ting_search_mobile_default_page_manager_handlers() {
           'name' => 'php',
           'settings' => array(
             'description' => '',
-            'php' => 'if (mobile_tools_is_mobile_site() == \'mobile\') {
+            'php' => 'if (mobile_tools_site_type() == \'mobile\') {
         return true;
       }
       return false;',
@@ -250,7 +250,7 @@ function ting_search_mobile_default_page_manager_handlers() {
           'name' => 'php',
           'settings' => array(
             'description' => '',
-            'php' => 'if (mobile_tools_is_mobile_site() == \'mobile\') {
+            'php' => 'if (mobile_tools_site_type() == \'mobile\') {
       return true;
     }
     return false;',
