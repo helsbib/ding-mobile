@@ -30,7 +30,7 @@ function ding_mobile_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'mobile_tools_android_theme';
-  $strongarm->value = 'dynamo';
+  $strongarm->value = 'aarhus';
 
   $export['mobile_tools_android_theme'] = $strongarm;
   $strongarm = new stdClass;
@@ -44,7 +44,7 @@ function ding_mobile_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'mobile_tools_blackberry_theme';
-  $strongarm->value = 'dynamo';
+  $strongarm->value = 'aarhus';
 
   $export['mobile_tools_blackberry_theme'] = $strongarm;
   $strongarm = new stdClass;
@@ -58,7 +58,7 @@ function ding_mobile_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'mobile_tools_desktop_url';
-  $strongarm->value = 'http://kbib.dev';
+  $strongarm->value = 'http://aakb.leela';
 
   $export['mobile_tools_desktop_url'] = $strongarm;
   $strongarm = new stdClass;
@@ -72,7 +72,7 @@ function ding_mobile_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'mobile_tools_ipad_theme';
-  $strongarm->value = 'dynamo';
+  $strongarm->value = 'aarhus';
 
   $export['mobile_tools_ipad_theme'] = $strongarm;
   $strongarm = new stdClass;
@@ -86,7 +86,7 @@ function ding_mobile_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'mobile_tools_iphone_theme';
-  $strongarm->value = 'dynamo';
+  $strongarm->value = 'aarhus';
 
   $export['mobile_tools_iphone_theme'] = $strongarm;
   $strongarm = new stdClass;
@@ -100,14 +100,14 @@ function ding_mobile_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'mobile_tools_ipod_theme';
-  $strongarm->value = 'dynamo';
+  $strongarm->value = 'aarhus';
 
   $export['mobile_tools_ipod_theme'] = $strongarm;
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'mobile_tools_mobile_url';
-  $strongarm->value = 'http://m.kbib.dev';
+  $strongarm->value = 'http://m.aakb.leela';
 
   $export['mobile_tools_mobile_url'] = $strongarm;
   $strongarm = new stdClass;
@@ -121,7 +121,7 @@ function ding_mobile_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'mobile_tools_opera_mini_theme';
-  $strongarm->value = 'dynamo';
+  $strongarm->value = 'aarhus';
 
   $export['mobile_tools_opera_mini_theme'] = $strongarm;
   $strongarm = new stdClass;
@@ -149,7 +149,7 @@ function ding_mobile_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'mobile_tools_theme_name';
-  $strongarm->value = 'mkolding';
+  $strongarm->value = 'alternator';
 
   $export['mobile_tools_theme_name'] = $strongarm;
   return $export;

@@ -22,26 +22,7 @@ function ding_mobile_menu_default_menu_links() {
     'external' => '1',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '0',
-  );
-  // Exported menu link: menu-mobile-menu:<front>
-  $menu_links['menu-mobile-menu:<front>'] = array(
-    'menu_name' => 'menu-mobile-menu',
-    'link_path' => '<front>',
-    'router_path' => '',
-    'link_title' => 'Kontakt os',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => '0',
-    'external' => '1',
-    'has_children' => '0',
-    'expanded' => '0',
     'weight' => '-50',
-    'parent_path' => 'flere',
   );
   // Exported menu link: menu-mobile-menu:arrangementer
   $menu_links['menu-mobile-menu:arrangementer'] = array(
@@ -119,7 +100,6 @@ function ding_mobile_menu_default_menu_links() {
   // Included for use with string extractors like potx.
   t('Arrangementer');
   t('Flere');
-  t('Kontakt os');
   t('Min Konto');
   t('Nyheder');
   t('Åbningstider');
