@@ -6,10 +6,10 @@
 function ding_mobile_menu_default_menu_custom() {
   $menus = array();
 
-  // Exported menu: menu-bottom-menu
-  $menus['menu-bottom-menu'] = array(
-    'menu_name' => 'menu-bottom-menu',
-    'title' => 'Bund menu',
+  // Exported menu: menu-mobile-bottom-menu
+  $menus['menu-mobile-bottom-menu'] = array(
+    'menu_name' => 'menu-mobile-bottom-menu',
+    'title' => 'Mobile bottom menu',
     'description' => '',
   );
   // Exported menu: menu-mobile-menu
@@ -20,7 +20,7 @@ function ding_mobile_menu_default_menu_custom() {
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('Bund menu');
+  t('Mobile bottom menu');
   t('Mobile menu');
 
 

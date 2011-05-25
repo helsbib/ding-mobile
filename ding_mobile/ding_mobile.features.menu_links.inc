@@ -6,9 +6,9 @@
 function ding_mobile_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: menu-bottom-menu:<front>
-  $menu_links['menu-bottom-menu:<front>'] = array(
-    'menu_name' => 'menu-bottom-menu',
+  // Exported menu link: menu-mobile-bottom-menu:<front>
+  $menu_links['menu-mobile-bottom-menu:<front>'] = array(
+    'menu_name' => 'menu-mobile-bottom-menu',
     'link_path' => '<front>',
     'router_path' => '',
     'link_title' => 'Åbningstider',
