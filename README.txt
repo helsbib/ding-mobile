@@ -7,10 +7,21 @@ Enable the features and mobile tools:
   * ting_search_mobile
   * mobile_tools
 
+Note that the mobile front page is located in the ding repository. This is due
+to the fact that we can not have different variants, for a single panel, in
+different features.
+
 Configuration
 -------------
-/admin/settings/mobile-tools
-/admin/settings/mobile-tools/themes
+First go into mobile tools (admin/settings/mobile-tools) and set which urls
+should be use to display the mobile version and which should be use for the
+desktop version.
+
+Next go to admin/settings/mobile-tools/themes to select which theme should be
+used for the mobile version of the site. Only active themes will be avaliable.
+
+Next go to block (admin/build/block) settings for your mobile theme and change
+the block settings for "Ting search box", to not show the block title.
 
 Troubleshooting
 ---------------
