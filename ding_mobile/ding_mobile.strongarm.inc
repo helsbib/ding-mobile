@@ -57,59 +57,10 @@ function ding_mobile_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'mobile_tools_desktop_url';
-  $strongarm->value = 'http://aakb.leela';
+  $strongarm->name = 'mobile_tools_hide_address_bar';
+  $strongarm->value = 1;
 
-  $export['mobile_tools_desktop_url'] = $strongarm;
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'mobile_tools_ipad_enable';
-  $strongarm->value = 0;
-
-  $export['mobile_tools_ipad_enable'] = $strongarm;
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'mobile_tools_ipad_theme';
-  $strongarm->value = 'aarhus';
-
-  $export['mobile_tools_ipad_theme'] = $strongarm;
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'mobile_tools_iphone_enable';
-  $strongarm->value = 0;
-
-  $export['mobile_tools_iphone_enable'] = $strongarm;
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'mobile_tools_iphone_theme';
-  $strongarm->value = 'aarhus';
-
-  $export['mobile_tools_iphone_theme'] = $strongarm;
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'mobile_tools_ipod_enable';
-  $strongarm->value = 0;
-
-  $export['mobile_tools_ipod_enable'] = $strongarm;
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'mobile_tools_ipod_theme';
-  $strongarm->value = 'aarhus';
-
-  $export['mobile_tools_ipod_theme'] = $strongarm;
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'mobile_tools_mobile_url';
-  $strongarm->value = 'http://m.aakb.leela';
-
-  $export['mobile_tools_mobile_url'] = $strongarm;
+  $export['mobile_tools_hide_address_bar'] = $strongarm;
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
@@ -145,12 +96,5 @@ function ding_mobile_strongarm() {
   $strongarm->value = 'not-redirect';
 
   $export['mobile_tools_redirect_exceptions_type'] = $strongarm;
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'mobile_tools_theme_name';
-  $strongarm->value = 'alternator';
-
-  $export['mobile_tools_theme_name'] = $strongarm;
   return $export;
 }

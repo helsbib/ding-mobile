@@ -6,24 +6,6 @@
 function ding_mobile_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: menu-mobile-bottom-menu:<front>
-  $menu_links['menu-mobile-bottom-menu:<front>'] = array(
-    'menu_name' => 'menu-mobile-bottom-menu',
-    'link_path' => '<front>',
-    'router_path' => '',
-    'link_title' => 'Åbningstider',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => '0',
-    'external' => '1',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '-50',
-  );
   // Exported menu link: menu-mobile-menu:arrangementer
   $menu_links['menu-mobile-menu:arrangementer'] = array(
     'menu_name' => 'menu-mobile-menu',
@@ -102,7 +84,6 @@ function ding_mobile_menu_default_menu_links() {
   t('Flere');
   t('Min Konto');
   t('Nyheder');
-  t('Åbningstider');
 
 
   return $menu_links;
