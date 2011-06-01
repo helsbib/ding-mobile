@@ -21,8 +21,8 @@ function ding_mobile_views_default_views() {
     'title' => array(
       'label' => '',
       'alter' => array(
-        'alter_text' => 1,
-        'text' => '<h2>[title]</h2>',
+        'alter_text' => 0,
+        'text' => '[title]</h2>',
         'make_link' => 0,
         'path' => '',
         'link_class' => '',
@@ -142,6 +142,14 @@ function ding_mobile_views_default_views() {
     'type' => 'none',
   ));
   $handler->override_option('items_per_page', 0);
+  $handler->override_option('style_options', array(
+    'grouping' => '',
+  ));
+  $handler->override_option('row_options', array(
+    'inline' => array(),
+    'separator' => '',
+    'hide_empty' => 0,
+  ));
   $handler = $view->new_display('panel_pane', 'Opening hours (mobile)', 'panel_pane_1');
   $handler->override_option('pane_title', 'Opening hours (mobile)');
   $handler->override_option('pane_description', 'List opening hours by library');
