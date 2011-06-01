@@ -57,6 +57,13 @@ function ding_mobile_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'mobile_tools_enable_build_mode';
+  $strongarm->value = 0;
+
+  $export['mobile_tools_enable_build_mode'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'mobile_tools_hide_address_bar';
   $strongarm->value = 1;
 

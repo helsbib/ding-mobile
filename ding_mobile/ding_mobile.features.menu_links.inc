@@ -6,6 +6,42 @@
 function ding_mobile_menu_default_menu_links() {
   $menu_links = array();
 
+  // Exported menu link: menu-mobile-bottom-menu:aabningstider
+  $menu_links['menu-mobile-bottom-menu:aabningstider'] = array(
+    'menu_name' => 'menu-mobile-bottom-menu',
+    'link_path' => 'aabningstider',
+    'router_path' => 'aabningstider',
+    'link_title' => 'Åbningstider',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+    ),
+    'module' => 'menu',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '-50',
+  );
+  // Exported menu link: menu-mobile-bottom-menu:contact
+  $menu_links['menu-mobile-bottom-menu:contact'] = array(
+    'menu_name' => 'menu-mobile-bottom-menu',
+    'link_path' => 'contact',
+    'router_path' => 'contact',
+    'link_title' => 'Kontakt',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+    ),
+    'module' => 'menu',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '-49',
+  );
   // Exported menu link: menu-mobile-menu:arrangementer
   $menu_links['menu-mobile-menu:arrangementer'] = array(
     'menu_name' => 'menu-mobile-menu',
@@ -82,8 +118,10 @@ function ding_mobile_menu_default_menu_links() {
   // Included for use with string extractors like potx.
   t('Arrangementer');
   t('Flere');
+  t('Kontakt');
   t('Min Konto');
   t('Nyheder');
+  t('Åbningstider');
 
 
   return $menu_links;
