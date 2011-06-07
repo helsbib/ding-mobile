@@ -49,11 +49,16 @@ function ding_mobile_form_ding_reservation_confirm_form_alter(&$form,&$form_stat
 
 /**
  * Implementation of hook_ting_object_buttons().
+ *
+ * Add this reservation button, without javascript pop-up window. The other
+ * buttons is hidden in css.
+ *
+ * TODO: implement remove button functions.
  */
 function ding_mobile_ting_object_buttons($object) {
   if (mobile_tools_site_type() == 'mobile') {
     if (!empty($object->localId) && ting_object_is($object, 'reservable')) {
-      return '<button onclick="location.href=\''.url('ding/reservation/' . $object->localId,array('query' => drupal_get_destination(),'absolute' => true)).'\';">'.t('Reserve now').'</button>';
+      return l(t('Reserve now'), 'ding/reservation/' . $object->localId, array('attributes' => array('class' => 'reserve-now button'), 'query' => drupal_get_destination()));
     }
   }
 }
