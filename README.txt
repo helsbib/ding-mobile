@@ -7,9 +7,14 @@ Enable the features and mobile tools:
   * ting_search_mobile
   * mobile_tools
 
-Note that the mobile front page is located in the ding repository. This is due
-to the fact that we can not have different variants, for a single panel, in
-different features.
+When you enable the mobile features, their state will be overridden on the
+features administration pages. This is due to the fact that these features comes
+with panels variants and features wants these variants to be part of the feature
+that has the actually panel definition.
+
+So all mobile features, ding_content and ding_events will have the status
+overridden. If you need to recreate any of these features, you have to manually
+ensure that these variants don't get into the wrong features.
 
 Configuration
 -------------
