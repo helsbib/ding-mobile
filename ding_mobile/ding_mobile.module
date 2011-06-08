@@ -51,4 +51,19 @@ function ding_mobile_ting_object_buttons($object) {
   }
 }
 
+/**
+ * Implementation of hook_theme.
+ */
+function ding_mobile_theme() {
+  return array(
+    'ding_mobile_reservation_item_list' => array(
+      'arguments' => array(
+          'items' => NULL,
+          'headline' => NULL,
+          'attributes' => NULL
+      ),
+      'template' => 'ding_mobile_reservation_item_list',
+    ),
+  );
+}
 
