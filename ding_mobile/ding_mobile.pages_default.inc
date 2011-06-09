@@ -388,7 +388,7 @@ return false;',
   $handler->task = 'page';
   $handler->subtask = 'ding_library_user_debts';
   $handler->handler = 'panel_context';
-  $handler->weight = -29;
+  $handler->weight = -35;
   $handler->conf = array(
     'title' => 'Mobile',
     'no_blocks' => 0,
@@ -400,13 +400,23 @@ return false;',
     'access' => array(
       'plugins' => array(
         0 => array(
+          'name' => 'role',
+          'settings' => array(
+            'rids' => array(
+              0 => 1,
+            ),
+          ),
+          'context' => 'argument_uid_1',
+          'not' => TRUE,
+        ),
+        1 => array(
           'name' => 'php',
           'settings' => array(
             'description' => '',
             'php' => 'if (mobile_tools_site_type() == \'mobile\') {
-    return true;
-  }
-  return false;',
+      return true;
+    }
+    return false;',
           ),
           'not' => FALSE,
         ),
