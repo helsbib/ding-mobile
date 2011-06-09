@@ -12,7 +12,7 @@
      <ul class="information">
        <?php foreach ($item['information'] as $info) { ?>
         <li class="list-item">
-        <em class="label"><?php print $info['label'] ?></em>:
+        <em class="label"><?php print $info['label'] ?>:</em>
         <span class="value"><?php print $info['value'] ?></span>
         </li>
        <?php } ?>
