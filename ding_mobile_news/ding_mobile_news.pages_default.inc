@@ -15,7 +15,7 @@ function ding_mobile_news_default_page_manager_handlers() {
   $handler->handler = 'panel_context';
   $handler->weight = -30;
   $handler->conf = array(
-    'title' => 'mobile',
+    'title' => 'Mobile',
     'no_blocks' => 0,
     'css_id' => '',
     'css' => '',
