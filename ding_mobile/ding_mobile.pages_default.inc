@@ -481,7 +481,7 @@ function ding_mobile_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'Mobile more links';
   $page->admin_description = '';
-  $page->path = 'flere';
+  $page->path = 'flere'; //TODO: Consider using english base paths which can be localized using path module. If so remember to update menu
   $page->access = array();
   $page->menu = array();
   $page->arguments = array();
@@ -562,7 +562,7 @@ function ding_mobile_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'Opening hours (Mobile)';
   $page->admin_description = '';
-  $page->path = 'aabningstider';
+  $page->path = 'aabningstider'; //TODO: Consider using english base paths which can be localized using path module. If so remember to update menu
   $page->access = array();
   $page->menu = array();
   $page->arguments = array();
