@@ -28,6 +28,8 @@ function ding_mobile_forward_to_status() {
   }
 }
 
+// TODO: Why is this necessary? 
+// Should it be wrapped in  if (mobile_tools_site_type() == 'mobile') {}
 function ding_mobile_form_ding_reservation_confirm_form_alter(&$form, &$form_state) {  
   $title = $form['object']['#value']->title;
   $form['description']['#value'] = '<h1>'.t('confirm reservation').'</h1><p>'.t('You are about to book %material. Are you sure you want to continue?',array('%material' => $title)).'</p>';
