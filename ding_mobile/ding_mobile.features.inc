@@ -6,7 +6,7 @@
 function ding_mobile_news_imagecache_default_presets() {
   $items = array(
     'mobile_list_image' => array(
-      'presetname' => 'mobile-list-image',
+      'presetname' => 'mobile_list_image',
       'actions' => array(
         '0' => array(
           'weight' => '0',
