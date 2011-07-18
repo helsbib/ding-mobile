@@ -1,5 +1,6 @@
 core = "6.x"
 dependencies[] = "content"
+dependencies[] = "ding_content"
 dependencies[] = "location"
 dependencies[] = "views_content"
 description = "Featuring views, imagecache presets, panel variants, etc."
