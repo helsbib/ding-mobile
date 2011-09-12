@@ -8,13 +8,13 @@ function ding_mobile_default_page_manager_handlers() {
   $handler = new stdClass;
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
-  $handler->name = 'node_view_panel_context_10';
+  $handler->name = 'mobile_node_view_panel_context';
   $handler->task = 'node_view';
   $handler->subtask = '';
   $handler->handler = 'panel_context';
   $handler->weight = -30;
   $handler->conf = array(
-    'title' => 'mobile node',
+    'title' => 'Mobile node',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'css_id' => '',
@@ -83,12 +83,12 @@ return false;',
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
 
-  $export['node_view_panel_context_10'] = $handler;
+  $export['mobile_node_view_panel_context'] = $handler;
   
   $handler = new stdClass;
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
-  $handler->name = 'user_view_panel_context_4';
+  $handler->name = 'mobile_user_view_panel_context';
   $handler->task = 'user_view';
   $handler->subtask = '';
   $handler->handler = 'panel_context';
@@ -156,12 +156,12 @@ return false;',
   $display->title_pane = 'new-1';
   $handler->conf['display'] = $display;
 
-  $export['user_view_panel_context_4'] = $handler;
+  $export['mobile_user_view_panel_context'] = $handler;
 
   $handler = new stdClass;
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
-  $handler->name = 'page_user_library_status_panel_context_2';
+  $handler->name = 'mobile_page_user_library_status_panel_context';
   $handler->task = 'page';
   $handler->subtask = 'user_library_status';
   $handler->handler = 'panel_context';
@@ -279,12 +279,12 @@ return false;',
   $display->title_pane = 'new-2';
   $handler->conf['display'] = $display;
 
-  $export['page_user_library_status_panel_context_2'] = $handler;
+  $export['mobile_page_user_library_status_panel_context'] = $handler;
 
   $handler = new stdClass;
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
-  $handler->name = 'page_front_panel_panel_context_2';
+  $handler->name = 'mobile_page_front_panel_panel_context';
   $handler->task = 'page';
   $handler->subtask = 'front_panel';
   $handler->handler = 'panel_context';
@@ -379,12 +379,12 @@ return false;',
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
 
-  $export['page_front_panel_panel_context_2'] = $handler;
+  $export['mobile_page_front_panel_panel_context'] = $handler;
 
   $handler = new stdClass;
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
-  $handler->name = 'page_ding_library_user_debts_panel_context_2';
+  $handler->name = 'mobile_page_ding_library_user_debts_panel_context';
   $handler->task = 'page';
   $handler->subtask = 'ding_library_user_debts';
   $handler->handler = 'panel_context';
@@ -465,7 +465,7 @@ return false;',
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
 
-  $export['page_ding_library_user_debts_panel_context_2'] = $handler;
+  $export['mobile_page_ding_library_user_debts_panel_context'] = $handler;
 
   return $export;
 }
@@ -481,7 +481,7 @@ function ding_mobile_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'Mobile more links';
   $page->admin_description = '';
-  $page->path = 'flere';
+  $page->path = 'flere'; //TODO: Consider using english base paths which can be localized using path module. If so remember to update menu
   $page->access = array();
   $page->menu = array();
   $page->arguments = array();
@@ -562,7 +562,7 @@ function ding_mobile_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'Opening hours (Mobile)';
   $page->admin_description = '';
-  $page->path = 'aabningstider';
+  $page->path = 'aabningstider'; //TODO: Consider using english base paths which can be localized using path module. If so remember to update menu
   $page->access = array();
   $page->menu = array();
   $page->arguments = array();

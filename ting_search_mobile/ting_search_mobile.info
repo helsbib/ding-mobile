@@ -1,4 +1,5 @@
 core = "6.x"
-description = "panel variants among others"
-name = "ting search mobile"
+dependencies[] = "ting_search"
+description = "Enable Ting search on mobile devices"
+name = "Ting search mobile"
 package = "Ding! Mobile"

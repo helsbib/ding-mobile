@@ -9,13 +9,13 @@ function ting_search_mobile_default_page_manager_handlers() {
   $handler = new stdClass;
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
-  $handler->name = 'page_search_results_panel_context_2';
+  $handler->name = 'mobile_page_search_results_panel_context';
   $handler->task = 'page';
   $handler->subtask = 'search_results';
   $handler->handler = 'panel_context';
   $handler->weight = -30;
   $handler->conf = array(
-    'title' => 'mobile',
+    'title' => 'Mobile',
     'no_blocks' => 0,
     'css_id' => '',
     'css' => '',
@@ -71,18 +71,18 @@ function ting_search_mobile_default_page_manager_handlers() {
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   
-  $export['page_search_results_panel_context_2'] = $handler; 
+  $export['mobile_page_search_results_panel_context'] = $handler; 
     
   $handler = new stdClass;
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
-  $handler->name = 'page_ting_object_view_panel_context_2';
+  $handler->name = 'mobile_page_ting_object_view_panel_context';
   $handler->task = 'page';
   $handler->subtask = 'ting_object_view';
   $handler->handler = 'panel_context';
   $handler->weight = -30;
   $handler->conf = array(
-    'title' => 'mobile',
+    'title' => 'Mobile',
     'no_blocks' => 0,
     'css_id' => '',
     'css' => '',
@@ -177,18 +177,18 @@ function ting_search_mobile_default_page_manager_handlers() {
   $handler->conf['display'] = $display;
     
   
-  $export['page_ting_object_view_panel_context_2'] = $handler;
+  $export['mobile_page_ting_object_view_panel_context'] = $handler;
   
   $handler = new stdClass;
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
-  $handler->name = 'page_ting_collection_view_panel_context_2';
+  $handler->name = 'mobile_page_ting_collection_view_panel_context';
   $handler->task = 'page';
   $handler->subtask = 'ting_collection_view';
   $handler->handler = 'panel_context';
   $handler->weight = -30;
   $handler->conf = array(
-    'title' => 'mobile',
+    'title' => 'Mobile',
     'no_blocks' => 0,
     'css_id' => '',
     'css' => '',
@@ -289,12 +289,12 @@ function ting_search_mobile_default_page_manager_handlers() {
   $display->title_pane = 'new-1';
   $handler->conf['display'] = $display;
 
-  $export['page_ting_collection_view_panel_context_2'] = $handler;
+  $export['mobile_page_ting_collection_view_panel_context'] = $handler;
 
   $handler = new stdClass;
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
-  $handler->name = 'page_user_library_status_panel_context_2';
+  $handler->name = 'mobile_page_user_library_status_panel_context';
   $handler->task = 'page';
   $handler->subtask = 'user_library_status';
   $handler->handler = 'panel_context';
@@ -412,7 +412,7 @@ return false;',
   $display->title_pane = 'new-2';
   $handler->conf['display'] = $display;
 
-  $export['page_user_library_status_panel_context_2'] = $handler;
+  $export['mobile_page_user_library_status_panel_context'] = $handler;
 
   return $export;
 }

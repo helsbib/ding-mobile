@@ -9,13 +9,13 @@ function ding_mobile_events_default_page_manager_handlers() {
   $handler = new stdClass;
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
-  $handler->name = 'page_events_overview_panel_context_2';
+  $handler->name = 'mobile_page_events_overview_panel_context';
   $handler->task = 'page';
   $handler->subtask = 'events_overview';
   $handler->handler = 'panel_context';
   $handler->weight = -30;
   $handler->conf = array(
-    'title' => 'mobile',
+    'title' => 'Mobile',
     'no_blocks' => 0,
     'css_id' => '',
     'css' => '',
@@ -138,7 +138,7 @@ function ding_mobile_events_default_page_manager_handlers() {
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
 
-  $export['page_events_overview_panel_context_2'] = $handler;
+  $export['mobile_page_events_overview_panel_context'] = $handler;
 
   return $export;
 }

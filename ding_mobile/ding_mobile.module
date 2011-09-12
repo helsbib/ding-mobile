@@ -15,8 +15,9 @@ function ding_mobile_menu() {
   );
   return $items;
 }
-/*
- * page callback to forward to user loanstatus
+
+/**
+ * Page callback to forward to user status
  */
 function ding_mobile_forward_to_status() {
   global $user;
@@ -28,6 +29,8 @@ function ding_mobile_forward_to_status() {
   }
 }
 
+// TODO: Why is this necessary? 
+// Should it be wrapped in  if (mobile_tools_site_type() == 'mobile') {}
 function ding_mobile_form_ding_reservation_confirm_form_alter(&$form, &$form_state) {  
   $title = $form['object']['#value']->title;
   $form['description']['#value'] = '<h1>'.t('confirm reservation').'</h1><p>'.t('You are about to book %material. Are you sure you want to continue?',array('%material' => $title)).'</p>';
@@ -38,8 +41,10 @@ function ding_mobile_form_ding_reservation_confirm_form_alter(&$form, &$form_sta
 /**
  * Implementation of hook_ting_object_buttons().
  *
- * Add this reservation button, without javascript pop-up window. The other
- * buttons is hidden in css.
+ * Add Reserve this button, without javascript pop-up window as
+ * as popups do not work very well on mobile devices.
+ *
+ * Other buttons are hidden using css.
  *
  * TODO: implement remove button functions.
  */
