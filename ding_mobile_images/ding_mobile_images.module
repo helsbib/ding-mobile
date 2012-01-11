@@ -1,7 +1,5 @@
 <?php
 
-// Drupal needs this blank file.
-
 /**
  * Implementation of hook_views_default_views_alter().
  *
@@ -9,9 +7,6 @@
  * views.
  */
 function ding_mobile_images_views_default_views_alter(&$views) {
-  /* $view->name = 'mobile_articles'; */
-  /* $view->name = 'mobile_events'; */
-
   if ($views['mobile_articles']) {
     _ding_mobile_images_replace_field($views['mobile_articles'], 'field_list_image', 'field_mobile_image');
   }
