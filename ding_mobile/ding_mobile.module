@@ -7,12 +7,23 @@ include_once('ding_mobile.features.inc');
  */
 function ding_mobile_menu() {
   $items = array();
-    
+
   $items['user/status'] = array(
     'title' => 'user status',
     'page callback' => 'ding_mobile_forward_to_status',
     'access callback' => true,
   );
+
+  /**
+   * We need this to get around some redir issues.
+   */
+  $items['goto_front'] = array(
+    'title' => 'Go to front page',
+    'page callback' => 'drupal_goto',
+    'page arguments' => array('<front>'),
+    'access callback' => TRUE,
+  );
+
   return $items;
 }
 
@@ -38,7 +49,7 @@ function ding_mobile_form_ding_reservation_confirm_form_alter(&$form, &$form_sta
     $title = $form['object']['#value']->title;
     $form['description']['#value'] = '<h1>'.t('confirm reservation').'</h1><p>'.t('You are about to book %material. Are you sure you want to continue?',array('%material' => $title)).'</p>';
   }
-  
+
   return $form;
 }
 
